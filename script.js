@@ -1,5 +1,3 @@
-var elemen1 = React.createElement('div', {}, 'Hello world!');
-
 var movies = [
   {
     id: 1,
@@ -34,20 +32,5 @@ var element =
     React.createElement('h1', {}, 'Lista filmów'),
     React.createElement('ul', {}, moviesElements)
   );
-
-var element2 = 
-	React.createElement('div', {},
-		React.createElement('h1', {}, 'Lista filmów'),
-		React.createElement('ul',{},
-			React.createElement('li', {},
-				React.createElement('h2', {}, 'HarryPotter'),
-				React.createElement('p', {}, 'Film o czarodzieju')
-			),
-			React.createElement('li', {},
-				React.createElement('h2', {}, 'Król lew'),
-				React.createElement('p', {}, 'Bajka')
-			)
-		)
-	);
 
 ReactDOM.render(element, document.getElementById('app'));
